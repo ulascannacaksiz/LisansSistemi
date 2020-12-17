@@ -1,0 +1,72 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color: #30343E;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #6e7077;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #acadb1;
+  color: white;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.footer {
+	width: 90%;
+	height: 291px;
+	background-color: #1a1a1a;
+	color: aliceblue;
+	padding: inherit;
+	float: right;
+	padding-top: 20px;
+}
+.foot-text{
+  clear: both;
+	margin-top: 5%;
+	margin-left: 35%;
+
+}
+.link{
+	margin-left: 10%;
+	
+}
+.link a{
+	color: white;
+	font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+}
